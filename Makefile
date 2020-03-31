@@ -11,6 +11,9 @@ GLFLAGS   :=
 
 UNAME=$(shell uname -a)
 
+CPUFLAGS += -march=armv7ve -mcpu=cortex-a15.cortex-a7
+CPUFLAGS += -marm -mfloat-abi=hard -mfpu=neon
+
 # Dirs
 ROOT_DIR := .
 LIBRETRO_DIR := $(ROOT_DIR)/libretro
